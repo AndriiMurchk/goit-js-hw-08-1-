@@ -32,7 +32,7 @@ function fillFeedbackFormFields() {
 const onFeedbackFormSubmit = event => {
     event.preventDefault();
 
-    console.log();
+    console.log(localStorage.getItem('feedback-form-state'));
     feedbackForm.reset();
     localStorage.removeItem('feedback-form-state');
 }
